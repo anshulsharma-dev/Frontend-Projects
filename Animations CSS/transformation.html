@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformation&Transitipn</title>
+    <style>
+        *{
+              margin: 0;
+            padding: 0;          
+        }
+       .container{
+          width: 100vw;
+          height: 100vh;
+          background-color: blanchedalmond;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+       }
+       .box{
+        
+        display: flex;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+
+        width: 400px;
+        height: 400px;
+        background-color: aquamarine;
+        border: 1px solid black;
+        transition: all 3s ease-in-out 0.1s ;
+     }
+        .box:hover {
+        rotate:  3 .5 2 180deg;
+        scale: 1.2 1.2 2;
+        
+        background-color: rgb(197, 186, 31);
+       }
+       .box p{
+        padding: 2px;
+         font-size: 3vw;
+         font-weight: 1;
+         opacity: 2;
+       }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="box">
+            <p>This is transform and transition</p>
+           </div>
+    </div>
+</body>
+</html>

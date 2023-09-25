@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size Units</title>
+</head>
+<style>
+    /* Size unit using % unit */
+    .box{
+        border: 2px solid black;
+        width: 50%;
+    }
+    .parent{
+        border: 2px solid black;
+        background-color: bisque;
+        width: 50%;
+    }
+    .child{
+        border: 1px solid black;
+        background-color: aqua;
+        width: 20%;
+    }
+    /* size unit = vh & vw */
+    .container{
+        border: 1px solid black;
+        background-color: rgb(158, 36, 140);
+        height: 100vh;
+        width: 50% ;
+    }
+
+    /* size unit em and rem  */
+    .boxem{
+        font-size: 2em ;
+    }
+    .container2{
+        border: 2px black solid;
+        font-size: 10px;
+    }
+    .childem{
+        border: 2px rgb(7, 197, 96) solid; ;
+        font-size: 10em;  
+        /* size becomes 10*10 = 100 px  */
+    }
+    
+    /* size unit "rem"  */
+    .pararem{
+        background-color: blanchedalmond;
+        font-size: 5rem;
+        /* font size becomes 14* 5 = 70 px  generally default can be 14px or 16px*/
+    }
+
+</style>
+<body>
+    <div class="box">
+        Welcome to CSS learning
+    </div>
+
+     <div class="parent">
+        <div class="child">
+         What you gonna do!
+        </div>
+     </div>
+     <br>
+     <br>
+     <div class="container">
+        What is art for you ?
+     </div>
+     <br>
+     <br>
+     <br>
+
+     <!-- em and rem -->
+     <p class="boxem">
+        Hello World
+     </p>
+
+     <div class="container2">
+        <div class="childem">
+            I saw you on a cornerstone!
+        </div>
+     </div>
+     <br>
+     <br>
+     <br>
+     <br>
+
+     <div class="pararem">
+        What is it worth?
+     </div>
+
+</body>
+</html>

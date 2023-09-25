@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 5px solid rgb(3, 0, 1);
+             /* width: 800px; */
+             height: 800px;  
+            margin: 2px;
+            padding: 2px;
+            background-color: bisque;
+            display: flex;
+            flex-direction: row;
+            /* flex-wrap: wrap; */
+            /* flex-flow: row wrap-reverse; */
+
+            /* justify-content & align-items if both set center can place the items in the exact centre of the screen from all sides */
+            justify-content:start; 
+            align-items:start; 
+
+            /* align-content works to align the content together when screen size is squezed */
+            /* align-content: center;  */
+
+        }
+        .box{
+            /* width: 200px;
+            height: 200px;   */
+            border: 2px solid black;
+            margin: 2px;
+            padding: 2px;
+            /* flex-grow: 1; */
+           
+        }
+        #box1{
+      
+            background-color: blue;
+            order: 500;
+            /* flex-grow: 5; */
+            /* flex-basis: 400px; */
+            align-self: center;
+        }
+        #box2{
+           
+            background-color: aqua;
+            /* flex-shrink: 4; */
+        }
+        #box3{
+            
+            background-color: yellow;
+        }
+        #box4{
+           
+            background-color: green;
+            order: -1;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+       <div class="box" id="box1"><strong>box1</strong></div>
+       <div class="box" id="box2">box2</div>
+       <div class="box" id="box3">box3</div>
+       <div class="box" id="box4">box4</div>
+       
+
+    </div>
+</body>
+</html>
